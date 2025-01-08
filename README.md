@@ -4,7 +4,7 @@
 A sleek and interactive portfolio website showcasing web development skills and projects. This is a sample portfolio template built with HTML, CSS, and JavaScript.
 ```
 
-![Portfolio Preview](preview.png)
+![Portfolio Preview](https://cloud-55flszy79-hack-club-bot.vercel.app/0image.png)
 
 ## Features
 
