@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
+    
+
+    <style>
+        @font-face {
+            font-family: BitxMap;
+            src: url('public/BitxMapFonttfb.ttf');
+        }
+
+        @font-face {
+            font-family: monument;
+            src: url('public/MonumentExtended-Regular.otf');
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url('public/Inter.ttc');
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .icon {
+            height: 1.8vw;
+            width: 1.8vw;
+        }
+
+        .navbar {
+            position: fixed;
+            border: 1px solid black;
+            display: flex;
+            font-family: BitxMap;
+            gap: 3vw;
+            align-items: center;
+            padding: 0.5vw 0.8vw 0.5vw 0.8vw;
+            top: 1.7vw;
+            left: 2vw;
+            width: max-content;
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            
+        }
+
+        .welcomeNav {
+            margin-left: 12vw;
+        }
+
+        .nameDiv {
+            display: flex;
+            /* flex-direction: column; */
+            gap: 0.8vw;
+        }
+
+        .square {
+            height: 2.8vw;
+            width: 2.8vw;
+            background-color: black;
+        }
+
+        .name {
+            font-family: monument;
+            font-size: 1.2vw;
+        }
+
+        /* .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        } */
+
+        #country {
+            font-family: BitxMap;
+            font-size: 1vw;
+        }
+
+        .introWel {
+            display: flex;
+            margin-left: 2vw;
+            margin-top: 8vw;
+            justify-content: space-between;
+        }
+
+        .welcText {
+            font-family: BitxMap;
+            font-size: 1.2vw;
+            margin-right: 2.5vw;
+        }
+
+        .welc1 {
+            margin-left: 4.9vw;
+        }
+
+        .balloon {
+            margin-top: 3vw;
+            width: 100vw;
+            height: 30vh;
+            background-color: black;
+        }
+
+        .landing-lower {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .landing-lower-1 {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-top: 0.4vh;
+            align-items: center;
+            margin-right: 2.5vw;
+            margin-left: 1.9vw;
+        }
+
+        .sphere {
+            width: 4vw;
+            margin-top: 1vh;
+        }
+
+        .open-btn {
+            font-family: bitxmap;
+            text-decoration: none;
+            border: solid black;
+            padding: 0.3vw;
+            height: fit-content;
+        }
+
+        .landing-lower-2 {
+            margin-top: 0.4vh;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-text-1 {
+            font-family: bitxmap;
+            font-size: 3rem;
+            margin-top: 4.8vh;
+        }
+
+        .footer-text-2 {
+            font-family: monument;
+            font-size: 6.34vw;
+            font-weight: 800;
+        }
+
+        .landing-lower-3 {
+            margin-left: 2vw;
+            margin-right: 2vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-text-3 {
+            font-family: monument;
+            font-weight: 400;
+            font-size: 7vw;
+        }
+
+        .pointer {
+            width: 1vw;
+            height: 1vw;
+            background-color: black;
+            margin-left: 2vw;
+            margin-top: 0.4vw;
+        }
+
+        .specialized {
+            font-family: Inter;
+            width: 60vw;
+            font-size: 1.8vw;
+        }
+
+        .specialized3 {
+            font-family: Inter;
+            width: 60vw;
+            font-size: 1.8vw;
+            /* margin-left: 20vw; */
+        }
+        .skills {
+            display: flex;
+            gap: 1vw;
+            align-items: flex-start;
+        }
+
+        .mainSkills {
+            margin-top: 13vw;
+            justify-content: space-between;
+        }
+
+        .specialized2 {
+            font-size: 1.2vw;
+            width: 40vw;
+        }
+
+        .skills2 {
+            margin-top: 12vw;
+        }
+
+        .skillsShort p {
+            margin-left: 20vw;
+            font-family: bitxmap;
+            font-size: 0.8vw;
+        }
+        .map{
+            width: 4vw;
+            height:3vw;
+        }
+
+        .arrowDown{
+            width: 2vw;
+            height: 3vw;
+            margin-left: 1vw;
+        }
+        .img25{
+            width:7vw;
+            height:4vw;
+        }
+        .capsule{
+            width:7vw;
+            height: 5vw;;
+        }
+
+        .icons{
+            display: flex;
+            flex-direction: column;
+            margin-left: 85vw;
+            margin-top: -3vw;
+            gap:0.3vw;
+            position:absolute;
+        }
+        .icons2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2vw;
+            gap:0.3vw;
+            position:absolute;
+            margin-top: -3vw;
+        }
+        .stripe{
+            width:7vw;
+            height:3vw;
+        }
+        .portrait{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+        }
+        .skills-1{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5vw;
+            width: 70vw;
+            font-family: monument;
+            font-size: 4rem;
+            margin-top: 15vw;
+        }
+        .intro-1{
+            width: 70vw;
+            display: flex;
+            flex-direction: row;
+            margin-left: 5vw;
+            justify-content: space-between;
+            font-family: bitxmap;
+            font-size: 1.1rem;
+            margin-right: 3vw;
+        }
+        .name{
+            font-family: bitxmap;
+            font-size: 1.1rem;
+            width: 15vw;
+        }
+        .portrait-1{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+        .detail-intro{
+            margin-left: 30vw;
+            margin-right: 15vw;
+        }
+
+        .skillsoverview{
+            display: flex;
+            flex-direction: row;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            margin-top: 15vh;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        .column1{
+            width: 30vw;
+        }
+        .column2{
+            width: 30vw;
+            margin-left: 10vw;
+        }
+        .headingSkills{
+            font-family: monument;
+            font-size: 1.5rem;
+            margin-bottom: 1vh;
+        }
+        .textSkills{
+            font-family: inter;
+            font-size: 1rem;
+            margin-bottom: 1vh;
+        }
+        .numberSkills{
+            font-family: monument;
+            font-size: 1.2rem;
+            margin-bottom: 10vh;
+        }
+
+        .skillsShort2 p{
+            margin-top: 0.3vw;
+            margin-left: 2vw;
+            font-family: bitxmap;
+            font-size: 0.8vw;
+        }
+        .pointer3{
+            margin-left: 23vw;
+            width: 1vw;
+            height: 1vw;
+            margin-top: 0.4vw;
+            background-color: black;
+        }
+        .pointer4{
+            margin-left: 34vw;
+            width: 1vw;
+            height: 1vw;
+            margin-top: 0.4vw;
+            background-color: black;
+        }
+        .cursor {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vw;
+            pointer-events: none;
+        }
+        .blueSquare {
+            background-color: blue;
+            display: inline-block;
+            margin: 0px;
+            width: 10vw;
+        }
+        .blueSquareRow {
+            height: 12.5vh;
+            width: 100vw;
+            display: flex;
+        }
+        .blueSquareRow:nth-child(odd) .blueSquare:nth-child(even), .blueSquareRow:nth-child(even) .blueSquare:nth-child(odd) {
+            animation-name: disappearUgh;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .blueSquareRow:nth-child(even) .blueSquare:nth-child(even) {
+            animation-name: disappearUgh;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.2s;
+        }
+        .blueSquareRow:nth-child(odd) .blueSquare:nth-child(odd) {
+            animation-name: disappearUgh;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.4s;
+        }
+        @keyframes disappearUgh {
+            0% {opacity: 1;}
+            100% {opacity: 0; z-index: -1;}
+        }
+        .hopeful{
+            width: 80vw;
+            margin-left: 10vw;
+            margin-top: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 50vh;
+        }
+
+        .text-hopeful{
+            font-family: monument;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        .bluerect{
+            margin-top: 15vh;
+            align-self: center;
+        }
+
+        .hesitate{
+            font-family: bitxmap;
+            margin-top: 0vh;
+            margin-left: 42vw;
+            margin-right: 15vw;
+        }
+        .projectsRow {
+            display: flex;
+            gap: 1vw;
+            margin: 1.5vw;
+            margin-bottom: 10vh;
+        }
+        .aboutMyWork {
+            width: 30vw;
+            font-size: 1.5vw;
+            font-family: BitxMap;
+            margin-top: 2vw;
+            margin-left: 2.4vw;
+        }
+        .aboutCard img {
+            width: 30vw;
+            height: 30vw;
+            object-fit: cover;
+        }
+        .aboutCard h1 {
+            font-family: monument;
+            margin: 0px;
+            margin-bottom: 0.8vw;
+        }
+        .cardHeading {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .cardHeading p {
+            font-family: BitxMap;
+            font-size: 1.1vw;
+        }
+        .projectsRow {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contact{
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .contact-1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact h2{
+            font-family: monument;
+            font-size: 1.5rem;
+            width: 25vw;
+        }
+        .sphere-1{
+            width: 4vw;
+            height: 4vw;
+            margin-top: 1vh;
+        }
+        .contact-2{
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .socialGrp{
+            font-family: bitxmap;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            width: 20vw;
+        }
+        .socialGrp a{
+            color: #000;
+            text-decoration: none;
+        }
+        .dontmiss{
+            font-family: inter;
+            width: 30vw;
+            font-size: 1.5rem;
+        }
+        .footer{
+            margin-top: 40vh;
+        }
+        .text-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: bitxmap;
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+        .model {
+            top: -10vh;
+            width: 90vw;
+            /* background: #000; */
+            height: 80vh;
+            aspect-ratio: 1;
+            position: absolute;
+            /* z-index: -9999; */
+            transform: rotateX(10deg);
+        }
+        * {
+            cursor: none;
+        }
+        .cursor {
+            position: fixed;
+            top: -5px;
+            left: -5px;
+            width: 10px;
+            height: 10px;
+            background-color: #000000;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999999;
+        }
+
+        .cursor-trail {
+            --size: 50px;
+            position: fixed;
+            top: calc(var(--size) / -2);
+            left: calc(var(--size) / -2);
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px #000;
+            pointer-events: none;
+            transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+                height 0.15s ease-out, background-color 0.15s ease-out;
+            z-index: 9999999;
+        }
+    </style>
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+    <div class="overlay">
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+        <div class="blueSquareRow">
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <svg class="icon" id="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+            <rect id="topLeft" width="9" height="9" fill="currentColor"></rect>
+            <rect id="bottomLeft" y="18" width="9" height="9" fill="currentColor"> </rect>
+            <rect id="topRight" x="18" width="9" height="9" fill="currentColor"></rect>
+            <rect id="center" x="9" y="9" width="9" height="9" fill="currentColor"></rect>
+        </svg>
+        <a class="welcomeNav special-text" onclick="scrollToTheElement('welcome')" data-value="WELCOME">WELCOME</a>
+        <a class="special-text" data-cursor="pointer" data-value="ABOUT" onclick="scrollToTheElement('about')">ABOUT</a>
+        <a class="special-text" data-cursor="pointer" data-value="PROJECTS" onclick="scrollToTheElement('projects')">PROJECTS</a>
+        <a class="special-text" data-cursor="pointer" data-value="CONTACT" onclick="scrollToTheElement('contact')">CONTACT</a>
+        <a class="special-text" data-cursor="pointer" data-value="BOT" onclick="window.location.href = '/bot.html'">BOT</a>
+    </div>
+    <div class="introWel" id="welcome">
+        <div class="nameDiv">
+            <div class="square"></div>
+            <div class="intro">
+                <p class="name">JOHN DOE</p>
+                <p id="country"></p>
+            </div>
+        </div>
+
+        <div class="welcomePort">
+            <p class="welcText welc1">WELCOME TO</p>
+            <p class="welcText">MY PORTFOLIO 2025</p>
+        </div>
+    </div>
+    
+    
+    <div class="landing-lower">
+        <div class="landing-lower-1">
+            <model-viewer class="model" src="/public/alpha-blend-litmus.glb" camera-controls disable-zoom></model-viewer>
+            <img src="public/sphere-gif.gif" alt="" class="sphere"/>
+            <a href="https://www.linkedin.com/johndoe/" class="open-btn">
+                OPEN TO WORK
+            </a>
+        </div>
+        <div class="landing-lower-2">
+            <div class="footer-text-1">
+                INDEPENDENT FRONTEND
+            </div>
+            <div class="footer-text-2">
+                ようこそ
+            </div>
+        </div>
+        <div class="landing-lower-3">
+            <div class="footer-text-3">
+                WEB DEVELOPER
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="mainSkills" id="about">
+        <div class="skills">
+            <div class="pointer"></div>
+            <p class="specialized">
+                TURNING IDEAS INTO REAL SHOWCASES, SPECIALIZING IN CREATING WEBSITES, MOBILE APPS,
+                AND LANDING PAGES. TO EFFECTIVELY ENGAGE YOUR AUDIENCE, MY UNIQUE TECHNICAL EXPERTISE AND CREATIVITY
+                FOCUS ON YOUR BRAND.
+            </p>
+            <div class="skillsShort">
+                <p>LANDING PAGES</p>
+                <p>WEBSITES</p>
+                <p>MOBILE APPLICATIONS</p>
+            </div>
+            
+            
+        </div>
+        
+        <div class="icons">
+            <div class="icons1">
+                <svg class="map"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 55"><style type="text/css">
+                .st0 {
+                fill: none;
+                stroke: #000000;
+                }
+                .st1 {
+                fill: #ffffff;
+                }
+                .st3 {
+                opacity: 1;
+                }
+                .st4 {
+                opacity: 0;
+                }
+                </style>
+                <g id="Rectangle"><path d="M0.5,0.5H91.5V54.5H0.5Z" class="st0 st3" style="opacity: 1;"></path></g><g id="Capsule"><path class="st0 st4" d="M35.7,7.89h37a27,27,0,0,1,27,27h0a27,27,0,0,1-27,27h-37a27,27,0,0,1-27-27h0A27,27,0,0,1,35.7,7.89Z" transform="translate(-8.2 -7.39)" style="opacity: 0;"></path></g><g id="MAP"><g id="Map"><path d="M52.9,17.7l3.2-1.3l-0.6-1c0-0.9,2-2,3.5-1.8l-2.9,1.8l1.6,1.1c0.8-1.6,2.1-1.3,3.2-1c2.4-1.2,4.5-2.7,7.4-1.4l-1,0.9 c0.1,0.1,0.1,0.2,0.2,0.2c1.3,0.2,2.7,0.2,4,0.5c0.9,0.1,1.8,0.1,2.3-0.6c2.3,1.2,4.7,1.3,7.2,1.3v3.3l-2,0.4l-1.6,2.7 c-0.7-1.2-0.7-1.2-0.2-2.5c-1.5,0-3,0.1-4.2,1.3c0.4,0.4,1.1,0.1,1.1,0.9c-0.1,0.5-0.3,0.9-0.6,1.2c-0.7,1-2.1,1.2-2.2,2.6 c0,0.2-0.4,0.3-0.7,0.5l-0.8-1.2c-0.1,0.3-0.3,0.4-0.3,0.5c0.5,2.1-0.8,3.1-2.4,3.8c-0.1,0.1-0.3,0.2-0.4,0.3l0.5,1.1 c-0.4,0.7-1.3,0.9-2,0.5c0.4,0.4,0.7,0.8,1.1,1.2l-0.4,0.4c0.2,0.6,0.5,1,1,1.4c0.5,0.4,1,0.6,1.6,0.6c-1.5,0.5-1.9,0.5-2.6-0.2 s-1.3-1.4-1.9-2.1c0-0.4,0.7-0.7,0.3-1.3c-0.5-0.9-0.9-1.7-1.3-2.6c-0.4,0.3-0.9,0.5-1.3,0.9c-0.3,0.2-0.6,0.6-0.7,1 c-0.1,0.8-0.7,0.7-1.2,1c-0.5-1.2-1-2.2-1.6-3.4L55,28c0.1,1.3,1.7,0.5,1.7,1.8c-0.3,1-1.4,1.1-2.5,1.5L52,27.5 c-0.4,1-0.3,1.2,0.6,2.8c0.6,1,0.8,1.1,2.7,1.3c-0.6,0.9-1.1,1.8-1.7,2.6s-1,1.3-0.6,2.3c0.1,0.1,0.1,0.2,0.1,0.4 c0,0.1,0,0.3-0.1,0.4c-0.8,1.3-1.7,2.5-2.6,3.8c-0.6,0.8-1.4,0.4-2.2,0.4c-0.4-1.2-0.9-2.3-1.3-3.5c-0.1-0.3-0.1-0.6,0-0.9 c0.2-0.4,0.3-0.8,0.2-1.2c-0.1-0.4-0.3-0.8-0.7-1c-0.5-0.5-0.1-1.5-1.1-1.7c-0.7-0.1-1.3-0.1-2-0.2c-1.3-0.1-2.3-1.2-2.2-2.5 c-0.1-0.5,0-1,0.2-1.5c0.2-0.5,0.6-0.9,1-1.2c0.7-0.5,1.3-1.1,1.9-1.8l2.5,0.1c0,0.2,0,0.3,0.1,0.5c0.1,0.2,0.2,0.3,0.3,0.4 c0.1,0.1,0.3,0.2,0.4,0.2c0.2,0,0.3,0,0.5,0c0.7-0.4,1.3,0,1.9,0s1.5,0.4,1.8-0.7c-0.5-0.1-1,0.5-1.4-0.1c-0.3-0.4-0.7,0.8-1.2,0 c-0.2-0.5-0.4-0.9-0.8-1.8c0,1.5-0.8,1.5-1.5,1.5l0.6-0.7c-0.5-0.5-0.8-0.9-1.6-0.5c-0.3,0.1-0.7,0.3-0.9,0.5 c-0.3,0.2-0.5,0.5-0.6,0.8l-1,0.3l-0.7-1.8l1.3-0.2l0.3-1.7c-0.3-0.6-0.7-1.2-1-1.8c0-0.1,0.1-0.3,0.3-0.7l1.6,2.3 c0.8-0.2,0.9-0.9,1-1.7c1.7,1.3,2.7-0.3,4.3-0.8l-1.5-0.4l0.3-1.2c-0.8,0.2-1,0.4-1,1.3c0,1.2-0.3,1.5-1.5,0.9 c-0.2-0.1-0.4-0.1-0.6-0.2l-0.7-0.1c0.1-0.8,0.4-1.5,0.9-2.2c0.4-0.6,0.9-1.1,1.5-1.5c1.7-1.2,3.6-0.4,5.4,0.2 C53.1,17,53.1,17.4,52.9,17.7l-1.2,0C52.4,18.4,52.7,18.2,52.9,17.7z M52.8,24.5c-0.2-1.6-1.3,0-1.7-0.7L50,24.6L52.8,24.5z  M55.4,24.2h-0.3l0.1,1.6h0.3C55.6,25.3,55.5,24.7,55.4,24.2L55.4,24.2z"></path><path d="M30.9,47c-1.2-0.5-1.9-1.8-1.7-3.1c0.2-1.3,0.4-2.8,0.5-4.2c0.1-0.6,0.2-1.2,0.3-1.9c-1.2-0.3-1.3-1.4-1.8-2.3 c-0.4-0.9-0.4-1.9,0.1-2.7c-1.9-1.3-4.2-1.8-5.7-3.5c-1.8-0.3-2.3-1.9-3.3-3c-0.2-0.2-0.4-0.5-0.5-0.8c-0.1-0.3-0.1-0.7-0.1-1 c0.2-0.9-0.4-1.8-1.2-2c-0.2-0.1-0.4-0.4-0.5-0.6c-0.3-1.2-1.6-2-2.8-1.6c-0.2,0-0.3,0.1-0.5,0.2c-1,0.5-2,1-3.4,1.6l0.9-1.3 c-1.4-0.9-1-2.5-1.4-3.7c0.8-0.8,2-1.2,3.1-1c2.2,0.3,4.3,0.5,6.8,0.7l-0.9-1.1c0-1.1,0.5-1.6,1.5-2c2.2-0.8,4.4-1.6,6.6-2.5 c1.3-0.5,2.7-0.4,4,0.1l-2.6,3l3.7,3.1c-1,1.7-1,1.7-3.4,1v-1.4C28.2,17,28,17,27.9,17c-0.2,0.5-0.3,1-0.5,1.6 c-0.9,0-1.9-0.2-2.2,1.2l3,1.8c0-0.8,0.1-1.6,0.1-2.4c2.6-0.4,3.8,1.2,4.9,3c-0.5,0.3-1,0.7-1.5,0.9c-1.2,0.6-2.1,1.7-2.6,2.9 c-0.1,0.2-0.2,0.4-0.4,0.5c-0.3,0.1-0.5,0.4-0.6,0.7c-0.1,0.3-0.1,0.6,0,0.9c-0.9-0.2-1.9-0.3-2.8-0.4c-0.3,0-0.6,0.6-0.8,0.9 c0.4,1.2,1.1,0.9,1.7,0.5l1.3,2.4c1.6-0.4,3.2-0.4,4.8,0c0,1,1.2,0.8,1.4,1.3c0.3,0.6,0.9,1,1.6,1.2c0.6,0.4,1.2,0.8,1.8,1.3 c-0.2,0.7-0.4,1.5-0.7,2.2c-0.2,0.5-0.5,0.9-0.8,1.3c-1.2,1.3-2.5,2.7-3.7,4c-0.5,0.5-0.7,1.1-0.8,1.7C31,45.3,30.9,46.2,30.9,47z "></path><path d="M35.9,19.5c-0.6,0.3-1.4,0.1-1.7-0.6c-0.6-0.8-1-1.8-1.2-2.8c-0.3-1.8-0.3-1.8-2.2-1.9c-0.1,0-0.3-0.1-0.4-0.1 c-0.2-0.2-0.3-0.4-0.5-0.6c0.5-0.6,1-1.4,1.6-2c0.3-0.3,0.7-0.4,1.1-0.5c2.2-0.3,4.4-0.5,6.7-0.9c1.3-0.2,1.8,0.9,2.7,1.5 c-0.7,0.7-1.1,1.7-1.2,2.7c-0.3,1.5-1,3-2.8,3.4C36.9,17.8,36.1,18.5,35.9,19.5z"></path><path d="M75.1,42.6c-1.6,0.3-2.4-1-3.4-1.5l-3.1,0.7c-0.2-0.6-0.3-1-0.5-1.5c-0.4-0.8,0-1.7,0.7-2.1l3-2l1.6,0.8l0.8-0.8 c0.9,1,1.7,2,2.3,3.2c0,0.1,0,0.3,0,0.5c0,0.1-0.1,0.3-0.1,0.4C75.9,41.1,75.5,41.8,75.1,42.6z"></path><path d="M75.4,36c-1.1-0.2-2-0.4-2.9-0.6s-1-0.7-0.7-1.5c0.9,0.2,1.8,0.4,2.7,0.7C75.2,34.8,75.2,34.8,75.4,36z"></path><path d="M71.3,26.8c0.6-0.3,1.1-0.7,1.6-1.1c0.4-0.5,0.7-1.1,0.9-1.7l0.9,0.5C73.9,26.7,72.5,27.7,71.3,26.8z"></path><path d="M80.3,42.3l-0.4-1.5c0.5,0.3,0.8,0.7,1,1.3c0.1,0.5,0.1,1.1-0.2,1.6c-0.2,0.3-0.4,0.6-0.7,0.8c-0.3,0.1-0.6,0.2-0.9,0.2 c0-0.3-0.2-0.8,0-1C79.5,43.3,79.8,42.8,80.3,42.3z"></path><path d="M9,28.5c0.3,0,0.6,0.1,0.9,0.2c0.6,0.3,1.4,0.5,2.1,0.3c0.7-0.2,0.9,0.5,1.2,1.2c-0.3,0-0.5,0-0.8-0.1 c-0.3,0-0.7-0.3-1-0.2c-1.2,0.3-1.7-0.5-2.5-1L9,28.5z"></path><path d="M69.5,33.5l-0.8,1.5c-0.4-0.2-1.1-0.3-1.2-0.6c-0.4-0.9,0.4-1.3,1.1-2L69.5,33.5z"></path><path d="M54.9,36.5c0.4,1.1-0.3,1.9-0.5,3c-0.5-0.5-1-0.8-1.1-1.1C53.2,37.4,53.9,36.9,54.9,36.5z"></path><path d="M40.6,19.4l-0.9-1.5c0.9-0.2,1.7-0.9,2.5,0.3L40.6,19.4z"></path><path d="M29.7,29.5l2.1,0.9l-0.2,0.4L29.5,30L29.7,29.5z"></path><path d="M42.3,21.1c0.7,0.3,0.9,0.5,0.7,1c-0.1,0.1-0.4,0.1-0.7,0.1V21.1z"></path><path d="M76.7,23.5L75.3,24c0.2-0.9,0.7-1,1.2-0.9L76.7,23.5z"></path><path d="M27.7,28.8l1.2,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.1-0.3-0.2 L27.7,28.8z"></path><path d="M16.9,38.5c-0.7,0.4-1,0.2-1.2-0.2c0-0.1,0-0.2,0-0.3c0-0.1,0.1-0.2,0.2-0.2C16.6,37.6,16.7,38.1,16.9,38.5z"></path><path d="M70.7,33.8c-0.3,0.4-0.5,0.8-0.9,1.3C69.7,33.9,69.7,33.9,70.7,33.8z"></path><path d="M73.8,27.5c0.2,0.4,0.9,0.7,0.2,1.7l-0.6-1.5L73.8,27.5z"></path><path d="M18.4,39.3c-0.3,0.2-0.4,0.4-0.5,0.4c-0.2-0.1-0.4-0.2-0.6-0.4c0.1-0.1,0.3-0.4,0.4-0.4C17.9,39,18.2,39.1,18.4,39.3z"></path><path d="M8.1,27.6c-0.9,0.6-0.9,0.6-1.1-0.3L8.1,27.6z"></path><path class="st1" d="M46.8,25.8c0.8,0,1.6,0,1.5-1.5c0.4,0.9,0.6,1.4,0.8,1.8c0.4,0.8,0.9-0.5,1.1,0c0.4,0.7,0.9,0,1.4,0.1 c-0.3,1.1-1.2,0.8-1.8,0.7s-1.2-0.4-1.9,0c-0.3,0.1-0.7,0-0.9-0.2c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.2-0.1-0.3-0.1-0.5L46.8,25.8z"></path><path class="st1" d="M46.6,25.9l-2.5-0.1l0,0c0.1-0.3,0.4-0.6,0.6-0.8c0.3-0.2,0.6-0.4,0.9-0.5c0.8-0.3,1.1,0,1.6,0.5l-0.6,0.7 L46.6,25.9z"></path><path class="st1" d="M52.8,24.5L50,24.6l1.1-0.8C51.5,24.5,52.7,22.9,52.8,24.5z"></path><path class="st1" d="M55.4,24.2c0.1,0.5,0.1,1.1,0.2,1.6h-0.4l-0.1-1.6L55.4,24.2z"></path><path class="st1" d="M52.9,17.7c-0.2,0.5-0.5,0.7-1.2,0H52.9L52.9,17.7z"></path></g></g></svg>
+                <svg class="arrowDown" id="Rectangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.49 36.49"><path d="M51.64,17.47h-6l0,24L19.44,15.32l-4.29,4.29L41.27,45.74l-24,0v6.1H51.64Z" transform="translate(-15.15 -15.32)"></path></svg>
+            </div>
+          <img class="img25" src="https://cms-artifacts.artlist.io/content/motion_array/1412578/Minimalistic_Seamless_Pattern_high_resolution_preview_1412578.jpg?Expires=2037529656322&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=vhDp~byTqWcsPXpScu0NlkQ9xr-O8ugvtY6-nVF-3LsRcJVW1GbTdrRryxZCYIyzj3rFqnKD5eJjwtAkstw8tK9yWsm-BCt98RtZQTJJQ2zim0wPv~VkTwAlJumlDWjhgxGgaAr0M~8B37ixVKxkwfImNUJtED0~Xy2amMU0PQdCmp5vhnO7nDwb7biFrUPkgpgqC3oyeToLLSbil2HoKXPEySMB~bwnK6C0kBaXA38cKco~KpV6iMvIuB1jOGlprLB7hyzG9OEjqquJb2shKffBNd0xpHvBuaipDeCpzthDXfkg4UpQUznwjozEzwTrbfGxUyZuDGtTsD8Lp~VvAA__">
+          <svg class="capsule" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 56.98"><defs><style>
+            .cls-11 {
+              fill: #fff;
+            }
+          </style></defs><g id="Rectangle"><rect width="83" height="56.98"></rect></g><g id="Capsule"><rect class="cls-11" x="1.2" y="1.19" width="80.59" height="54.61" rx="27.3"></rect></g></svg>
+        
+          <img class="stripe"src="https://64.media.tumblr.com/0f28773743dac005eac7e067783840eb/tumblr_o0b18wFSyp1rpco88o1_500.gifv">
+        </div>
+
+
+        <div class="skills skills2">
+            <div class="pointer"></div>
+            <p class="specialized specialized2">
+                I SPECIALIZE IN CRAFTING CAPTIVATING LANDING PAGES TAILORED FOR SPORTS, MUSIC, OR CULTURAL EVENTS,
+                DELIVERING IMMERSIVE USER EXPERIENCES. EVERY PAGE ENSURES SEAMLESS MOBILE NAVIGATION AND INTEGRATES SEO
+                TO MAXIMIZE PERFORMANCE.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mainSkills">
+        <div class="skills">
+            <div class="skillsShort2">
+                <p>PIXEL PERFECT</p>
+                <p>RESPONSIVE DESIGN</p>
+                <p>CUSTOMIZABLE CMS</p>
+            </div>
+            <div class="pointer3"></div>
+            <p class="specialized specialized3">
+                I IMPLEMENT "PIXEL PERFECT" PRINCIPLES FOR A NEAT AND TIDY WEBSITE DESIGN, ENSURING A CONSISTENT USER EXPERIENCE ACROSS ALL DEVICES THROUGH RESPONSIVE DESIGN. USING A COMPLETELY CUSTOMIZABLE CMS, I PROVIDE EASY CONTENT MANAGEMENT AND INCORPORATE GSAP ANIMATIONS FOR DYNAMIC INTERACTION.
+            </p>
+
+
+        </div>
+
+        <div class="icons2">
+            <div>
+                <svg class="map"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 55"><style type="text/css">
+                .st0 {
+                fill: none;
+                stroke: #000000;
+                }
+                .st1 {
+                fill: #ffffff;
+                }
+                .st3 {
+                opacity: 1;
+                }
+                .st4 {
+                opacity: 0;
+                }
+                </style>
+                <g id="Rectangle"><path d="M0.5,0.5H91.5V54.5H0.5Z" class="st0 st3" style="opacity: 1;"></path></g><g id="Capsule"><path class="st0 st4" d="M35.7,7.89h37a27,27,0,0,1,27,27h0a27,27,0,0,1-27,27h-37a27,27,0,0,1-27-27h0A27,27,0,0,1,35.7,7.89Z" transform="translate(-8.2 -7.39)" style="opacity: 0;"></path></g><g id="MAP"><g id="Map"><path d="M52.9,17.7l3.2-1.3l-0.6-1c0-0.9,2-2,3.5-1.8l-2.9,1.8l1.6,1.1c0.8-1.6,2.1-1.3,3.2-1c2.4-1.2,4.5-2.7,7.4-1.4l-1,0.9 c0.1,0.1,0.1,0.2,0.2,0.2c1.3,0.2,2.7,0.2,4,0.5c0.9,0.1,1.8,0.1,2.3-0.6c2.3,1.2,4.7,1.3,7.2,1.3v3.3l-2,0.4l-1.6,2.7 c-0.7-1.2-0.7-1.2-0.2-2.5c-1.5,0-3,0.1-4.2,1.3c0.4,0.4,1.1,0.1,1.1,0.9c-0.1,0.5-0.3,0.9-0.6,1.2c-0.7,1-2.1,1.2-2.2,2.6 c0,0.2-0.4,0.3-0.7,0.5l-0.8-1.2c-0.1,0.3-0.3,0.4-0.3,0.5c0.5,2.1-0.8,3.1-2.4,3.8c-0.1,0.1-0.3,0.2-0.4,0.3l0.5,1.1 c-0.4,0.7-1.3,0.9-2,0.5c0.4,0.4,0.7,0.8,1.1,1.2l-0.4,0.4c0.2,0.6,0.5,1,1,1.4c0.5,0.4,1,0.6,1.6,0.6c-1.5,0.5-1.9,0.5-2.6-0.2 s-1.3-1.4-1.9-2.1c0-0.4,0.7-0.7,0.3-1.3c-0.5-0.9-0.9-1.7-1.3-2.6c-0.4,0.3-0.9,0.5-1.3,0.9c-0.3,0.2-0.6,0.6-0.7,1 c-0.1,0.8-0.7,0.7-1.2,1c-0.5-1.2-1-2.2-1.6-3.4L55,28c0.1,1.3,1.7,0.5,1.7,1.8c-0.3,1-1.4,1.1-2.5,1.5L52,27.5 c-0.4,1-0.3,1.2,0.6,2.8c0.6,1,0.8,1.1,2.7,1.3c-0.6,0.9-1.1,1.8-1.7,2.6s-1,1.3-0.6,2.3c0.1,0.1,0.1,0.2,0.1,0.4 c0,0.1,0,0.3-0.1,0.4c-0.8,1.3-1.7,2.5-2.6,3.8c-0.6,0.8-1.4,0.4-2.2,0.4c-0.4-1.2-0.9-2.3-1.3-3.5c-0.1-0.3-0.1-0.6,0-0.9 c0.2-0.4,0.3-0.8,0.2-1.2c-0.1-0.4-0.3-0.8-0.7-1c-0.5-0.5-0.1-1.5-1.1-1.7c-0.7-0.1-1.3-0.1-2-0.2c-1.3-0.1-2.3-1.2-2.2-2.5 c-0.1-0.5,0-1,0.2-1.5c0.2-0.5,0.6-0.9,1-1.2c0.7-0.5,1.3-1.1,1.9-1.8l2.5,0.1c0,0.2,0,0.3,0.1,0.5c0.1,0.2,0.2,0.3,0.3,0.4 c0.1,0.1,0.3,0.2,0.4,0.2c0.2,0,0.3,0,0.5,0c0.7-0.4,1.3,0,1.9,0s1.5,0.4,1.8-0.7c-0.5-0.1-1,0.5-1.4-0.1c-0.3-0.4-0.7,0.8-1.2,0 c-0.2-0.5-0.4-0.9-0.8-1.8c0,1.5-0.8,1.5-1.5,1.5l0.6-0.7c-0.5-0.5-0.8-0.9-1.6-0.5c-0.3,0.1-0.7,0.3-0.9,0.5 c-0.3,0.2-0.5,0.5-0.6,0.8l-1,0.3l-0.7-1.8l1.3-0.2l0.3-1.7c-0.3-0.6-0.7-1.2-1-1.8c0-0.1,0.1-0.3,0.3-0.7l1.6,2.3 c0.8-0.2,0.9-0.9,1-1.7c1.7,1.3,2.7-0.3,4.3-0.8l-1.5-0.4l0.3-1.2c-0.8,0.2-1,0.4-1,1.3c0,1.2-0.3,1.5-1.5,0.9 c-0.2-0.1-0.4-0.1-0.6-0.2l-0.7-0.1c0.1-0.8,0.4-1.5,0.9-2.2c0.4-0.6,0.9-1.1,1.5-1.5c1.7-1.2,3.6-0.4,5.4,0.2 C53.1,17,53.1,17.4,52.9,17.7l-1.2,0C52.4,18.4,52.7,18.2,52.9,17.7z M52.8,24.5c-0.2-1.6-1.3,0-1.7-0.7L50,24.6L52.8,24.5z  M55.4,24.2h-0.3l0.1,1.6h0.3C55.6,25.3,55.5,24.7,55.4,24.2L55.4,24.2z"></path><path d="M30.9,47c-1.2-0.5-1.9-1.8-1.7-3.1c0.2-1.3,0.4-2.8,0.5-4.2c0.1-0.6,0.2-1.2,0.3-1.9c-1.2-0.3-1.3-1.4-1.8-2.3 c-0.4-0.9-0.4-1.9,0.1-2.7c-1.9-1.3-4.2-1.8-5.7-3.5c-1.8-0.3-2.3-1.9-3.3-3c-0.2-0.2-0.4-0.5-0.5-0.8c-0.1-0.3-0.1-0.7-0.1-1 c0.2-0.9-0.4-1.8-1.2-2c-0.2-0.1-0.4-0.4-0.5-0.6c-0.3-1.2-1.6-2-2.8-1.6c-0.2,0-0.3,0.1-0.5,0.2c-1,0.5-2,1-3.4,1.6l0.9-1.3 c-1.4-0.9-1-2.5-1.4-3.7c0.8-0.8,2-1.2,3.1-1c2.2,0.3,4.3,0.5,6.8,0.7l-0.9-1.1c0-1.1,0.5-1.6,1.5-2c2.2-0.8,4.4-1.6,6.6-2.5 c1.3-0.5,2.7-0.4,4,0.1l-2.6,3l3.7,3.1c-1,1.7-1,1.7-3.4,1v-1.4C28.2,17,28,17,27.9,17c-0.2,0.5-0.3,1-0.5,1.6 c-0.9,0-1.9-0.2-2.2,1.2l3,1.8c0-0.8,0.1-1.6,0.1-2.4c2.6-0.4,3.8,1.2,4.9,3c-0.5,0.3-1,0.7-1.5,0.9c-1.2,0.6-2.1,1.7-2.6,2.9 c-0.1,0.2-0.2,0.4-0.4,0.5c-0.3,0.1-0.5,0.4-0.6,0.7c-0.1,0.3-0.1,0.6,0,0.9c-0.9-0.2-1.9-0.3-2.8-0.4c-0.3,0-0.6,0.6-0.8,0.9 c0.4,1.2,1.1,0.9,1.7,0.5l1.3,2.4c1.6-0.4,3.2-0.4,4.8,0c0,1,1.2,0.8,1.4,1.3c0.3,0.6,0.9,1,1.6,1.2c0.6,0.4,1.2,0.8,1.8,1.3 c-0.2,0.7-0.4,1.5-0.7,2.2c-0.2,0.5-0.5,0.9-0.8,1.3c-1.2,1.3-2.5,2.7-3.7,4c-0.5,0.5-0.7,1.1-0.8,1.7C31,45.3,30.9,46.2,30.9,47z "></path><path d="M35.9,19.5c-0.6,0.3-1.4,0.1-1.7-0.6c-0.6-0.8-1-1.8-1.2-2.8c-0.3-1.8-0.3-1.8-2.2-1.9c-0.1,0-0.3-0.1-0.4-0.1 c-0.2-0.2-0.3-0.4-0.5-0.6c0.5-0.6,1-1.4,1.6-2c0.3-0.3,0.7-0.4,1.1-0.5c2.2-0.3,4.4-0.5,6.7-0.9c1.3-0.2,1.8,0.9,2.7,1.5 c-0.7,0.7-1.1,1.7-1.2,2.7c-0.3,1.5-1,3-2.8,3.4C36.9,17.8,36.1,18.5,35.9,19.5z"></path><path d="M75.1,42.6c-1.6,0.3-2.4-1-3.4-1.5l-3.1,0.7c-0.2-0.6-0.3-1-0.5-1.5c-0.4-0.8,0-1.7,0.7-2.1l3-2l1.6,0.8l0.8-0.8 c0.9,1,1.7,2,2.3,3.2c0,0.1,0,0.3,0,0.5c0,0.1-0.1,0.3-0.1,0.4C75.9,41.1,75.5,41.8,75.1,42.6z"></path><path d="M75.4,36c-1.1-0.2-2-0.4-2.9-0.6s-1-0.7-0.7-1.5c0.9,0.2,1.8,0.4,2.7,0.7C75.2,34.8,75.2,34.8,75.4,36z"></path><path d="M71.3,26.8c0.6-0.3,1.1-0.7,1.6-1.1c0.4-0.5,0.7-1.1,0.9-1.7l0.9,0.5C73.9,26.7,72.5,27.7,71.3,26.8z"></path><path d="M80.3,42.3l-0.4-1.5c0.5,0.3,0.8,0.7,1,1.3c0.1,0.5,0.1,1.1-0.2,1.6c-0.2,0.3-0.4,0.6-0.7,0.8c-0.3,0.1-0.6,0.2-0.9,0.2 c0-0.3-0.2-0.8,0-1C79.5,43.3,79.8,42.8,80.3,42.3z"></path><path d="M9,28.5c0.3,0,0.6,0.1,0.9,0.2c0.6,0.3,1.4,0.5,2.1,0.3c0.7-0.2,0.9,0.5,1.2,1.2c-0.3,0-0.5,0-0.8-0.1 c-0.3,0-0.7-0.3-1-0.2c-1.2,0.3-1.7-0.5-2.5-1L9,28.5z"></path><path d="M69.5,33.5l-0.8,1.5c-0.4-0.2-1.1-0.3-1.2-0.6c-0.4-0.9,0.4-1.3,1.1-2L69.5,33.5z"></path><path d="M54.9,36.5c0.4,1.1-0.3,1.9-0.5,3c-0.5-0.5-1-0.8-1.1-1.1C53.2,37.4,53.9,36.9,54.9,36.5z"></path><path d="M40.6,19.4l-0.9-1.5c0.9-0.2,1.7-0.9,2.5,0.3L40.6,19.4z"></path><path d="M29.7,29.5l2.1,0.9l-0.2,0.4L29.5,30L29.7,29.5z"></path><path d="M42.3,21.1c0.7,0.3,0.9,0.5,0.7,1c-0.1,0.1-0.4,0.1-0.7,0.1V21.1z"></path><path d="M76.7,23.5L75.3,24c0.2-0.9,0.7-1,1.2-0.9L76.7,23.5z"></path><path d="M27.7,28.8l1.2,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.1-0.3-0.2 L27.7,28.8z"></path><path d="M16.9,38.5c-0.7,0.4-1,0.2-1.2-0.2c0-0.1,0-0.2,0-0.3c0-0.1,0.1-0.2,0.2-0.2C16.6,37.6,16.7,38.1,16.9,38.5z"></path><path d="M70.7,33.8c-0.3,0.4-0.5,0.8-0.9,1.3C69.7,33.9,69.7,33.9,70.7,33.8z"></path><path d="M73.8,27.5c0.2,0.4,0.9,0.7,0.2,1.7l-0.6-1.5L73.8,27.5z"></path><path d="M18.4,39.3c-0.3,0.2-0.4,0.4-0.5,0.4c-0.2-0.1-0.4-0.2-0.6-0.4c0.1-0.1,0.3-0.4,0.4-0.4C17.9,39,18.2,39.1,18.4,39.3z"></path><path d="M8.1,27.6c-0.9,0.6-0.9,0.6-1.1-0.3L8.1,27.6z"></path><path class="st1" d="M46.8,25.8c0.8,0,1.6,0,1.5-1.5c0.4,0.9,0.6,1.4,0.8,1.8c0.4,0.8,0.9-0.5,1.1,0c0.4,0.7,0.9,0,1.4,0.1 c-0.3,1.1-1.2,0.8-1.8,0.7s-1.2-0.4-1.9,0c-0.3,0.1-0.7,0-0.9-0.2c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.2-0.1-0.3-0.1-0.5L46.8,25.8z"></path><path class="st1" d="M46.6,25.9l-2.5-0.1l0,0c0.1-0.3,0.4-0.6,0.6-0.8c0.3-0.2,0.6-0.4,0.9-0.5c0.8-0.3,1.1,0,1.6,0.5l-0.6,0.7 L46.6,25.9z"></path><path class="st1" d="M52.8,24.5L50,24.6l1.1-0.8C51.5,24.5,52.7,22.9,52.8,24.5z"></path><path class="st1" d="M55.4,24.2c0.1,0.5,0.1,1.1,0.2,1.6h-0.4l-0.1-1.6L55.4,24.2z"></path><path class="st1" d="M52.9,17.7c-0.2,0.5-0.5,0.7-1.2,0H52.9L52.9,17.7z"></path></g></g></svg>
+                <svg class="arrowDown" id="Rectangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.49 36.49"><path d="M51.64,17.47h-6l0,24L19.44,15.32l-4.29,4.29L41.27,45.74l-24,0v6.1H51.64Z" transform="translate(-15.15 -15.32)"></path></svg>
+            </div>
+          <img class="img25" src="https://cms-artifacts.artlist.io/content/motion_array/1412578/Minimalistic_Seamless_Pattern_high_resolution_preview_1412578.jpg?Expires=2037529656322&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=vhDp~byTqWcsPXpScu0NlkQ9xr-O8ugvtY6-nVF-3LsRcJVW1GbTdrRryxZCYIyzj3rFqnKD5eJjwtAkstw8tK9yWsm-BCt98RtZQTJJQ2zim0wPv~VkTwAlJumlDWjhgxGgaAr0M~8B37ixVKxkwfImNUJtED0~Xy2amMU0PQdCmp5vhnO7nDwb7biFrUPkgpgqC3oyeToLLSbil2HoKXPEySMB~bwnK6C0kBaXA38cKco~KpV6iMvIuB1jOGlprLB7hyzG9OEjqquJb2shKffBNd0xpHvBuaipDeCpzthDXfkg4UpQUznwjozEzwTrbfGxUyZuDGtTsD8Lp~VvAA__">
+          <svg class="capsule" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 56.98"><defs><style>
+            .cls-11 {
+              fill: #fff;
+            }
+          </style></defs><g id="Rectangle"><rect width="83" height="56.98"></rect></g><g id="Capsule"><rect class="cls-11" x="1.2" y="1.19" width="80.59" height="54.61" rx="27.3"></rect></g></svg>
+
+          <img class="stripe"src="https://64.media.tumblr.com/0f28773743dac005eac7e067783840eb/tumblr_o0b18wFSyp1rpco88o1_500.gifv">
+        </div>
+
+
+        <div class="skills skills2">
+            <div class="pointer4"></div>
+            <p class="specialized specialized2">
+                STIMULATE CUSTOMER ENGAGEMENT, PROMOTE YOUR OFFERS, AND INCREASE SALES WITH MY HIGH-PERFORMING MOBILE APPS. SAVE TIME AND MONEY WHILE IMPROVEING YOUR ONLINE PRESENCE FOR HIGHER VISIBILITY.
+            </p>
+        </div>
+    </div>
+
+    <div class="portrait" onwheel="handleSideScroll(event)" id="sideScrollDiv">
+        <div class="portrait-1">
+            <div class="skills-1">
+                <p>FRONTEND DEVELOPER</p>
+                <p>WEB INTEGRATOR</p>
+                <p>CREATIVE DESIGN</p>
+            </div>
+    
+            <div class="intro-1">
+                <div class="name">
+                    <p>HELLO</p>
+                    <p>I'M JOHN</p>
+                </div>
+                <div class="detail-intro">
+                    SINCE 2020, I'VE HAD THE PRIVILEGE OF IMMERSING MYSELF IN THE INTRIGUING WORLD OF WEB DEVELOPMENT THROUGH MY VARIOUS ASSIGNMENTS.
+                    <br> <br> <br>
+                    I HAVE BEEN ABLE TO EXPLORE A VARIETY OF AREAS THROUGH MY JOURNEY, AND HERE ARE SOME OF MY ACCOMPLISHMENTS:
+                </div>
+            </div>
+        </div>
+        <div class="portrait-2" style="width: 300px;">
+            <img src="public/port.png" alt="">
+        </div>
+        <div class="skillsoverview">
+            <div class="column column1">
+                <div class="headingSkills">
+                    UX
+                </div>
+                <div class="textSkills">
+                    THE CREATION OF MODULAR STATIC WEBSITES USING CUTTING-EDGE TECHNOLOGIES SUCH AS REACT, NEXT, AND GATSBY. EACH OF THESE SITES IS DESIGNED TO OFFER AN EXCEPTIONAL USER EXPERIENCE.
+                </div>
+                <div class="numberSkills">
+                    [01]
+                </div>
+    
+    
+                <div class="headingSkills">
+                    SEO
+                </div>
+                <div class="textSkills">
+                    THE IMPLEMENTATION OF CMS DATA SCHEMAS AND SEO OPTIMIZATION TO ENSURE MAXIMUM ONLINE VISIBILITY. MASTERY OF THESE ASPECTS IS ESSENTIAL FOR THE SUCCESS OF ANY ONLINE PROJECT.
+                </div>
+                <div class="numberSkills">
+                    [02]
+                </div>
+    
+    
+                <div class="headingSkills">
+                    MOBILE
+                </div>
+                <div class="textSkills">
+                    THE DESIGN AND DEVELOPMENT OF MOBILE APPLICATIONS FOR THE E-COMMERCE SECTOR, USING REACT NATIVE. THESE APPLICATIONS PROVIDE A SMOOTH AND USER-FRIENDLY SHOPPING EXPERIENCE.
+                </div>
+                <div class="numberSkills">
+                    [03]
+                </div>
+            </div>
+            <div class="column column2">
+                <div class="headingSkills">
+                    INNOVATIVE
+                </div>
+                <div class="textSkills">
+                    THE CREATION OF INNOVATIVE WEB APPLICATIONS USING APPROACHES SUCH AS ATOMIC DESIGN SLICING, INTEGRATION, AND END-TO-END TESTING WITH TOOLS LIKE STORYBOOK, CHROMATIC, JEST, AND VITE. THIS ENSURES THAT EACH ELEMENT FUNCTIONS SEAMLESSLY AND EFFECTIVELY.
+                </div>
+                <div class="numberSkills">
+                    [04]
+                </div>
+    
+    
+                <div class="headingSkills">
+                    TECHNO
+                </div>
+                <div class="textSkills">
+                    I AM PASSIONATE ABOUT MASTERING THE LATEST WEB DEVELOPMENT TECHNOLOGIES. I EXCEL IN CREATING STATIC SITES (JAMSTACK), AND I AM COMFORTABLE WITH THREE.JS, GSAP, RTK, AND GRAPHQL, WHICH ALLOWS ME TO CREATE HIGH-PERFORMING WEBSITES THAT MEET MY CLIENTS' NEEDS.
+                </div>
+                <div class="numberSkills">
+                    [05]
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hopeful">
+        <div class="text-hopeful">
+            I LOOK FORWARD TO
+            DISCUSSING YOUR NEEDS AND
+            HOW I CAN CONTRIBUTE TO
+            YOUR NEXT PROJECT.
+        </div>
+
+        <svg class="bluerect" width="70" height="70" viewBox="0 0 286 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="143" width="143" height="143" fill="#2502C7"/>
+            <rect y="140" width="143" height="143" fill="#2502C7"/>
+        </svg>
+
+        <div class="hesitate">
+            PLEASE DON'T HESITATE TO CONTACT ME
+            TO DISCUSS YOUR IDEAS AND GOALS FURTHER.
+            I AM EXCITED ABOUT THE OPPORTUNITY
+            TO CONNECT WITH YOU!
+        </div>
+    </div>
+    <div class="aboutMyWork">ABOUT MY WORK</div>
+
+    <div class="projectsRow" id="projects">
+        <div class="aboutCard" id="snake" onclick="snake()">
+            <div class="cardHeading">
+                <h1>WEIRDSNAKE</h1>
+                <i class="fas fa-jobhi"></i>
+            </div>
+            <img src="public/snake_logo.png">
+            <div class="cardHeading">
+                <p>WEB APP LAPTOP/MOBILE</p>
+                <p>2022 MAR.</p>
+            </div>
+        </div>
+        <div class="aboutCard">
+            <div class="cardHeading">
+                <h1>BETTER PEARLS</h1>
+                <i class="fas fa-jobhi"></i>
+            </div>
+            <img class="image-project" src="https://cloud-hd3m8rsra-hack-club-bot.vercel.app/0image.png">
+            <div class="cardHeading">
+                <p>MINECRAFT MOD</p>
+                <p>2025 JAN.</p>
+            </div>
+        </div>
+    </div>  
+
+    <div class="contact" id="contact">
+        <div class="contact-1">
+            <h2>LET'S TALK ABOUT YOUR NEXT PROJECT</h2>
+            <img src="public/sphere-gif.gif" alt="" class="sphere-1">
+        </div>
+
+        <div class="contact-2">
+            <div class="socialGrp">
+                <a href="https://www.instagram.com/johndoe/">Instagram</a>
+                <a href="https://www.linkedin.com/company/johndoe/">LinkedIn</a>
+                <a href="https://github.com/johndoe">Github</a>
+                <!-- <a href="">E-Mail</a> -->
+            </div>
+
+            <div class="dontmiss">
+                TO NOT MISS ANY OF MY UPCOMING PROJECTS, MAKE SURE TO FOLLOW ME ON SOCIAL MEDIA !
+                <br><br>
+                THANKS FOR VISITING MY SITE !
+                <br><br>
+                ありがとう
+            </div>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <div class="text-footer">
+                <p>JOHN DOE . PORTFOLIO 2025</p>
+                <P>DESIGN BY NotIshi28</P>
+                <a onclick="scrollToTheElement('welcome')"">BACK TO TOP</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        setInterval(function () {
+
+            const d = new Date();
+            var hours = d.getHours();
+            var ampm = "AM";
+            if (hours >= 12) {
+                hours -= 12;
+                ampm = "PM";
+            }
+            else if (hours == 0) {
+                hours = 12;
+            }
+
+            hours = hours.toString();
+            var mins = d.getMinutes().toString();
+            if (hours.length < 2) {
+                hours = '0' + hours;
+            }
+            if (mins.length < 2) {
+                mins = '0' + mins;
+            }
+
+
+
+            var time = hours + ':' + mins;
+
+            document.getElementById("country").innerHTML = "BASED IN INDIA [" + time + " " + ampm + "]"
+        }, 1000)
+        window.onload = () => {
+    const cursor = document.querySelector("#cursor");
+    const cursorBorder = document.querySelector("#cursor-trail");
+    const cursorPos = { x: 0, y: 0 };
+    const cursorBorderPos = { x: 0, y: 0 };
+
+    document.addEventListener("mousemove", (e) => {
+        cursorPos.x = e.clientX;
+        cursorPos.y = e.clientY;
+
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+
+        requestAnimationFrame(function loop() {
+            const easting = 8;
+            cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
+            cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
+
+            cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+            requestAnimationFrame(loop);
+        });
+
+        document.querySelectorAll("[data-cursor]").forEach((item) => {
+        item.addEventListener("mouseover", (e) => {
+            if (item.dataset.cursor === "pointer") {
+                cursorBorder.style.backgroundColor = "transparent";
+                cursorBorder.style.setProperty("--size", "80px");
+                cursor.style.borderRadius = "0"
+            }
+        });
+        item.addEventListener("mouseout", (e) => {
+            cursorBorder.style.backgroundColor = "unset";
+            cursorBorder.style.mixBlendMode = "unset";
+            cursorBorder.style.setProperty("--size", "50px");   
+            cursor.style.borderRadius = "50%"
+            cursor.style.backgroundColor = "black"
+            });
+        });
+    }
+        const handleSideScroll = (e) => {
+            if ((document.getElementById('sideScrollDiv').scrollLeft == 0 && e.deltaY < 0) || (document.getElementById('sideScrollDiv').scrollLeft + document.getElementById('sideScrollDiv').clientWidth >= document.getElementById('sideScrollDiv').scrollWidth && e.deltaY > 0)) {    
+            } else {
+                console.log(document.getElementById('sideScrollDiv').scrollWidth)
+                e.preventDefault()
+            }
+            if (e.deltaY > 0 || e.deltaX > 0) {
+                document.getElementById('sideScrollDiv').scrollLeft += 25
+            } else {
+                document.getElementById('sideScrollDiv').scrollLeft -= 25
+            }
+        }
+        function scrollToTheElement(id) {
+            const elmnt = document.getElementById(id)
+            elmnt.scrollIntoView({behavior: 'smooth'})
+        }
+        const lenis = new Lenis()
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        function snake(){
+            window.location.href = "snake.html"
+        }
+
+
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        let interval = null;
+
+
+        document.querySelectorAll(".special-text").forEach((ele) => {
+            ele.onmouseover = event => {  
+                
+                let iteration = 0;
+                
+                clearInterval(interval);
+                
+                interval = setInterval(() => {
+                    event.target.innerText = event.target.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if(index < iteration) {
+                        return event.target.dataset.value[index];
+                        }
+                    
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("");
+                    
+                    if(iteration >= event.target.dataset.value.length){ 
+                    clearInterval(interval);
+                    }
+                    
+                    iteration += 1 / 3;
+                }, 20);
+        }})
+    </script>
+</body>
+
+</html>
